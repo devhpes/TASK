@@ -1,0 +1,334 @@
+/*
+CSS For Styling
+*/
+
+html,
+body {
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+}
+
+.one {
+	width: 49%;
+	order: 1;
+}
+
+.two {
+	width: 30%;
+	order: 2;
+}
+
+.three {
+	width: 20%;
+	order: 3;
+}
+
+.colorOptions {
+	text-align: center;
+}
+
+.image {
+	margin-left: 3em;
+}
+
+.dotBlue {
+	height: 25px;
+	width: 25px;
+	background-color: #18285B;
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.dotGrey {
+	height: 25px;
+	width: 25px;
+	background-color: rgb(60, 60, 61);
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.dotRed {
+	height: 25px;
+	width: 25px;
+	background-color: rgb(230, 9, 9);
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.dotSliver {
+	height: 25px;
+	width: 25px;
+	background-color: #C0C0C0;
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.hide {
+	display: none;
+}
+
+.meter {
+	width: 100%;
+	background-color: rgb(235, 223, 223);
+	border-radius: 1.2em;
+	display: inline-block;
+	height: 15px;
+}
+
+.meter-fill {
+	background-color: #24f309;
+	transition: 0.3s all linear;
+	border-radius: 1.25em;
+	height: 15px;
+	display: inline-block;
+}
+
+.meter-fill.green {
+	background-color: #4CAF50;
+	animation: progress-3 3s ease-in-out forwards;
+	-webkit-animation: progress-3 3s ease-in-out forwards;
+}
+
+.meter-fill.green.green1 {
+	background-color: rgb(11, 215, 241);
+	animation: progress-2 3s ease-in-out forwards;
+	-webkit-animation: progress-2 3s ease-in-out forwards;
+}
+
+.meter-fill.green.green2 {
+	background-color: rgb(226, 32, 32);
+	animation: progress-5 3s ease-in-out forwards;
+	-webkit-animation: progress-5 3s ease-in-out forwards;
+}
+
+.meter-fill.green.green3 {
+	background-color: rgb(243, 13, 212);
+	animation: progress-3 3s ease-in-out forwards;
+	-webkit-animation: progress-3 3s ease-in-out forwards;
+}
+
+.meter-fill.green.green4 {
+	background-color: rgb(24, 9, 231);
+	animation: progress-4 3s ease-in-out forwards;
+	-webkit-animation: progress-4 3s ease-in-out forwards;
+}
+
+.overall {
+	margin-top: 15em;
+	margin-left: 6em;
+}
+
+.viewAll {
+	text-align: right;
+	padding-top: 5px;
+}
+
+a {
+	text-decoration: none;
+	color: midnightblue;
+}
+
+a:hover {
+	color: crimson;
+}
+
+.container2 {
+	display: flex;
+	flex-direction: row;
+}
+
+.someText {
+	width: 50%;
+	order: 1;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+	width: 13%;
+	height: 12em;
+	order: 2;
+	margin: 4px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.cardText {
+	text-align: center;
+	background: #1097f1;
+	overflow: hidden;
+}
+
+.someText {
+	margin: 2px;
+	padding: 4px;
+	text-align: center;
+	border: 1px solid rgb(2, 21, 37);
+}
+
+.semiCircle {
+	position: relative;
+	float: left;
+	text-align: center;
+}
+
+.semiCircleOverflow {
+	position: relative;
+	overflow: hidden;
+	width: 200px;
+	height: 100px;
+}
+
+.bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	box-sizing: border-box;
+	border: 15px solid #eee;
+	border-bottom-color: rgb(0, 110, 255);
+	border-right-color: rgb(0, 110, 255);
+}
+
+.percent {
+	margin-bottom: 5em;
+}
+
+.someText2 {
+	text-align: center;
+}
+
+img.zoom {
+	width: 350px;
+	height: 200px;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+}
+
+.transition {
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.colorOptionsText {
+	text-align: center;
+}
+
+.enterTextColor {
+	border-radius: 2px;
+	border: 5px;
+	padding: 3px;
+}
+
+/* animation */
+
+@keyframes progress {
+	from {
+		width: 0;
+	}
+	to {
+		width: 50%;
+	}
+}
+
+@-webkit-keyframes progress {
+	from {
+		width: 0;
+	}
+	to {
+		width: 50%;
+	}
+}
+
+@keyframes progress-2 {
+	from {
+		width: 0;
+	}
+	to {
+		width: 65%;
+	}
+}
+
+@-webkit-keyframes progress-2 {
+	from {
+		width: 0;
+	}
+	to {
+		width: 65%;
+	}
+}
+
+@keyframes progress-3 {
+	from {
+		width: 0;
+	}
+	to {
+		width: 75%;
+	}
+}
+
+@-webkit-keyframes progress-3 {
+	from {
+		width: 0;
+	}
+	to {
+		width: 75%;
+	}
+}
+
+@keyframes progress-4 {
+	from {
+		width: 0;
+	}
+	to {
+		width: 85%;
+	}
+}
+
+@-webkit-keyframes progress-4 {
+	from {
+		width: 0;
+	}
+	to {
+		width: 85%;
+	}
+}
+
+@keyframes progress-5 {
+	from {
+		width: 0;
+	}
+	to {
+		width: 80%;
+	}
+}
+
+@-webkit-keyframes progress-5 {
+	from {
+		width: 0;
+	}
+	to {
+		width: 80%;
+	}
+}
