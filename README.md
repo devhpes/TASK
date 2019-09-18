@@ -1,2 +1,2 @@
 # Task
-Webpage Developed Using JavaScript,BootStrap HTML, CSS And Google Map
+Webpage Developed Using JavaScript, Jquery, HTML And CSS
